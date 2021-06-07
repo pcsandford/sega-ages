@@ -28,6 +28,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 }
 
+/* ===
+large layout components 
+=== */
+
 body {
     color:var(--base);
     background: #757F9A;  /* fallback for old browsers */
@@ -46,6 +50,9 @@ main {
     width:100%;
 }
 
+/* ===
+text styles 
+=== */
 
 h1 {
     font-family:var(--standard);
@@ -87,7 +94,9 @@ h3 {
     color:var(--base);
 }
 
-
+/* ===
+content styles 
+=== */
 
 .content {
     width:100%;
@@ -115,6 +124,13 @@ img {
     margin:auto;
 }
 
+@media screen and (max-width: 414px) {
+    img {
+        max-width:350px;
+        
+    } 
+}
+
 .content-text {
     width:100%;
     padding:40px 0 0 0;
@@ -134,14 +150,28 @@ img {
     margin:3rem 0;
 }
 
+
+
 button {
-    margin-right:20px;
     padding:5px 0;
     border:none;
     background:transparent;
     position: relative;
     padding:5px 10px;
     font-weight:var(--bold);
+}
+
+@media screen and (max-width: 414px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        margin:2rem 0 0 0;
+    } 
+
+    button {
+        margin:0 0 20px 0;
+        display: inline-block;
+    }
 }
 
 button:focus {
@@ -181,6 +211,10 @@ footer a {
     color:white;
 }
 
+/* === 
+styles to fade in image using React CSSTransition 
+=== */
+
 .image-enter {
     opacity: 0;
 }
@@ -190,12 +224,4 @@ footer a {
     transition: opacity 1000ms;
 }
 
-/* .image-exit{
-    opacity: 1;
-}
-
-.image-exit-active {
-    opacity: 0;
-    transition: opacity 1000ms;
-} */
 

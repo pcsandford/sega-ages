@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Footer = ({disclaimer, builtBy, link}) => {
+    
     return (
         <footer>
             <p>{disclaimer}</p>

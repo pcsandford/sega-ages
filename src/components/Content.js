@@ -4,10 +4,13 @@ import { CSSTransition } from "react-transition-group";
 
 const Content = ({consoles}) => {
 
+    //set the selected item to be the first object in the consoles array
     const [selected, setSelected] = useState(0);
+
+    //set the CSSTransition inProp to false
     const [inProp, setInProp] = useState(false);
 
-
+    //desctructure data from the first object in the consoles array
     const {name, image, year, units} = consoles[selected];
 
     return (
