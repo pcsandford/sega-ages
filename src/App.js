@@ -1,34 +1,38 @@
 import React from 'react'
+import "./assets/style.css"
 import Header from "./components/Header"
-import ImageContainer from "./components/ImageContainer"
-import Selector from "./components/Selector"
+import Content from "./components/Content"
 import Footer from "./components/Footer"
+import consoles from "./data"
+
+console.log("Hi, this is my first attempt at building something with ⚛️ React Hooks so if you see something messed up please let me know! Thank you! 😊")
 
 
-class App extends React.Component {
+const App = () => {
 
-
-            state = {
-        consoleNames: ["Mastersystem", "Mastersystem II", "Mega Drive"]
-    };
-
-
-    render () {
     return (
         <main>
-            <Header />
-            <ImageContainer />
-            <ul>
-                {this.state.consoleNames.map((name, index) => {
-                    return <Selector key={index} name={name} />
-                })}
-            </ul>
-            <Footer />
+            <section className="wrapper">
+                <Header 
+                    titleLeft="SEGA" 
+                    titleRight="AGES" 
+                    subtitle="SEGA consoles through the years" 
+                />
+                <Content 
+                    consoles={consoles}
+                />
+            </section>
+            <Footer 
+                disclaimer="All console names &trade; SEGA GAMES CO., LTD. and SEGA CORPORATION" 
+                builtBy="Made with nostalgic 💙 by"
+                link="http://www.cameroncodes.com"
+            />
+            
         </main>
     )
 
 }
-}
+
 
 export default App
 

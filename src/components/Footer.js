@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({disclaimer, builtBy, link}) => {
     return (
-        <div>
-            This is the footer
-        </div>
+        <footer>
+            <p>{disclaimer}</p>
+            <p>{builtBy} <a href={link}>Peter Cameron</a> &copy; {new Date().getFullYear()}</p>
+        </footer>
     )
 }
 
