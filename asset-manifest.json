@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sega-ages/static/css/main.01798696.chunk.css",
+    "main.css": "/sega-ages/static/css/main.b1e035de.chunk.css",
     "main.js": "/sega-ages/static/js/main.ef073046.chunk.js",
     "main.js.map": "/sega-ages/static/js/main.ef073046.chunk.js.map",
     "runtime-main.js": "/sega-ages/static/js/runtime-main.4364c962.js",
@@ -8,13 +8,13 @@
     "static/js/2.1c4aa582.chunk.js": "/sega-ages/static/js/2.1c4aa582.chunk.js",
     "static/js/2.1c4aa582.chunk.js.map": "/sega-ages/static/js/2.1c4aa582.chunk.js.map",
     "index.html": "/sega-ages/index.html",
-    "static/css/main.01798696.chunk.css.map": "/sega-ages/static/css/main.01798696.chunk.css.map",
+    "static/css/main.b1e035de.chunk.css.map": "/sega-ages/static/css/main.b1e035de.chunk.css.map",
     "static/js/2.1c4aa582.chunk.js.LICENSE.txt": "/sega-ages/static/js/2.1c4aa582.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4364c962.js",
     "static/js/2.1c4aa582.chunk.js",
-    "static/css/main.01798696.chunk.css",
+    "static/css/main.b1e035de.chunk.css",
     "static/js/main.ef073046.chunk.js"
   ]
 }
